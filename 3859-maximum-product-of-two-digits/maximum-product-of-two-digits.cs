@@ -9,13 +9,11 @@ public class Solution {
                 sec=max;
                 max=digit;
             }
-            else if(digit>sec && sec!=max){
+            else if(digit>sec){
                 sec=digit;
             }
             l/=10;
         }
-       Console.WriteLine(sec);
-   
         return max*sec;
     }
 }
