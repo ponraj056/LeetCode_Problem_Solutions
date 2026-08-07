@@ -12,16 +12,9 @@ var countPartitions = function(nums) {
             sum+=nums[j];
         }
         b=nums[i]+b;
-        console.log(b);
         let a=b-sum;
-        if(count(a)) c++;
+        if(a%2==0) c++;
         i++;
     }
     return c;
 };
-var count=function(num){
-    if(num%2==0){
-        return true;
-    }
-    return false;
-}
