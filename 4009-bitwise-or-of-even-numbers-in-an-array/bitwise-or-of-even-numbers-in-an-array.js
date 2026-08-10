@@ -8,6 +8,9 @@ var evenNumberBitwiseORs = function(nums) {
         if(i%2==0){
             sum |=i;
         }
+        else{
+            continue;
+        }
     }
     return sum;
 };
