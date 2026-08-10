@@ -3,14 +3,6 @@
  * @return {number}
  */
 var evenNumberBitwiseORs = function(nums) {
-    let sum=0;
-    for(const i of nums){
-        if(i%2==0){
-            sum |=i;
-        }
-        else{
-            continue;
-        }
-    }
-    return sum;
+  let re= nums.reduce((acc, curr) => curr % 2 === 0 ? acc | curr : acc, 0);
+  return re;
 };
