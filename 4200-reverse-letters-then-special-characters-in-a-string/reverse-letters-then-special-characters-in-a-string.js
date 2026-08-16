@@ -32,7 +32,5 @@ var reverseByType = function(s) {
             x++;
         }
     }
-    console.log(ne);
-    console.log(arr1);
     return res;
 };
